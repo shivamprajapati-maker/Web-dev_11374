@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 12 - DOM Manipulation</title>
+</head>
+<body>
+
+    <h2 id="heading">Original Heading</h2>
+    <button onclick="changeText()">Change Heading Text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerText = "Heading Changed by JS!";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 15 - Math & String</title>
+</head>
+<body>
+
+    <h2>Math & String Functions</h2>
+
+    <p id="math"></p>
+    <p id="string"></p>
+
+    <script>
+        // Math functions
+        var num = 9.7;
+        document.getElementById("math").innerText =
+            "Original Number: " + num + 
+            ", Rounded: " + Math.round(num) + 
+            ", Floor: " + Math.floor(num) +
+            ", Ceil: " + Math.ceil(num);
+
+        // String functions
+        var str = "hello world";
+        document.getElementById("string").innerText =
+            "Original: " + str + 
+            ", UpperCase: " + str.toUpperCase() +
+            ", Length: " + str.length;
+    </script>
+
+</body>
+</html>

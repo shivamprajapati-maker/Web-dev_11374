@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIT 4 - Experiment 1</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">UNIT 4 – DOM Manipulation</h1>
+
+    <p id="para" class="highlight">
+        This paragraph is manipulated using JavaScript DOM methods.
+    </p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="hideShow()">Show / Hide</button>
+    <button onclick="changeColor()">Change Color</button>
+
+    <!-- JavaScript -->
+    <script>
+        // Change text using getElementById and innerHTML
+        function changeText() {
+            document.getElementById("title").innerHTML =
+                "DOM Manipulation using JavaScript";
+        }
+
+        // Show / Hide element
+        function hideShow() {
+            document.getElementById("para").classList.toggle("hidden");
+        }
+
+        // Change style dynamically
+        function changeColor() {
+            document.getElementById("para").style.color = "blue";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 4 - Experiment 2</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<p id="text">This text can be shown or hidden.</p>
+<button onclick="toggleText()">Show / Hide</button>
+
+<script>
+function toggleText() {
+    document.getElementById("text").classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>

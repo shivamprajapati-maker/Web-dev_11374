@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 4 - Experiment 4</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        li { margin: 5px 0; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h2>Task List</h2>
+<input type="text" id="task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="list"></ul>
+
+<script>
+function addTask() {
+    let li = document.createElement("li");
+    li.innerHTML = document.getElementById("task").value;
+
+    li.onclick = function () {
+        this.remove();   // remove child node
+    };
+
+    document.getElementById("list").append(li);
+}
+</script>
+
+</body>
+</html>

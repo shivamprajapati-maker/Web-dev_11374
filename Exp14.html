@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 14 - Event Handling</title>
+</head>
+<body>
+
+    <h2 id="demo">Hover over me!</h2>
+
+    <button onclick="buttonClicked()">Click Me</button>
+
+    <script>
+        // Mouseover event
+        document.getElementById("demo").addEventListener("mouseover", function() {
+            this.style.color = "red";
+            this.innerText = "Mouse Over Event Triggered!";
+        });
+
+        // Click event
+        function buttonClicked() {
+            alert("Button clicked!");
+        }
+    </script>
+
+</body>
+</html>
